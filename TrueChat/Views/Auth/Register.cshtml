@@ -1,0 +1,35 @@
+﻿@model TrueChat.ViewModels.RegisterViewModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="root">
+    <div class="center-lout">
+        <div class="center-container">
+            <h2>Register</h2>
+            <form method="post" class="form-container" asp-controller="Auth" asp-action="Register">
+                <div asp-validation-summary="ModelOnly"></div>
+                <div>
+                    <label asp-for="Username"></label><br />
+                    <input asp-for="Username" />
+                    <span asp-validation-for="Username"></span>
+                </div>
+                <div>
+                    <label asp-for="Password"></label><br />
+                    <input asp-for="Password" />
+                    <span asp-validation-for="Password"></span>
+                </div>
+                <div>
+                    <label asp-for="PasswordConfirm"></label><br />
+                    <input asp-for="PasswordConfirm" />
+                    <span asp-validation-for="PasswordConfirm"></span>
+                </div>
+                <div>
+                    <input class="btn" type="submit" value="Register" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<link rel="stylesheet" href="~/style.css">

@@ -1,0 +1,228 @@
+body {
+    background-color: #1d1d1d;    
+    padding-top: 60px;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #232323;
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: #93ca2d;
+    }
+
+::-webkit-scrollbar-track {
+    border-width: 0;
+}
+
+a {
+    color: #93ca2d;
+}
+
+a:visited {
+    color: #93ca2d;
+}
+
+a:hover {
+    color: #a9ff0b;
+}
+
+.header-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #232323;    
+}
+
+hr {
+    margin: 0;
+    border-color: #93ca2d;
+}
+
+    .header-container h2 {
+        font-size: 14pt;
+        color: #bfbfbf;
+        display: inline-block;
+        vertical-align: central;
+        margin-left: 12px;
+        margin-right: 10px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        padding: 0px;
+    }
+    
+
+.chat-container {
+    background-color: #232323;
+    border-style: solid;
+    border-color: #93ca2d;
+    border-radius: 6px;
+    border-width: 1px;        
+}
+
+.messages-container {
+    background-color: #1d1d1d;
+    padding-bottom: 10px;
+    border-style: solid;
+    border-color: #424242;
+    border-radius: 6px 6px 0px 0px;
+    border-width: 1px;
+    overflow: auto;
+    height: 300px;
+    margin: 6px;
+    margin-bottom: 0px;
+}
+
+    .messages-container button {
+        background-color: #1d1d1d;
+        border-style: solid;
+        border-color: #93ca2d;
+        border-radius: 6px;
+        border-width: 1px;
+        padding: 6px;
+        font-size: 14pt;
+        color: #bfbfbf;
+        font-family: Helvetica;
+        margin-left: auto;
+        margin-right: auto;
+        display:block;
+    }
+
+    .messages-container button:hover {
+        background-color: #93ca2d;
+        color: #1d1d1d;
+    }
+
+.message-container {
+    background-color: #232323;
+    border-style: solid;
+    border-color: #151515;
+    border-radius: 6px;
+    border-width: 1px;
+    margin: 6px;
+    padding: 12px;
+    overflow: hidden;
+}
+
+.message-author {
+    font-size: 16pt;
+    color: #93ca2d;
+    margin: 0px 30px;
+    padding: 0px;
+}
+
+.message-msg {
+    font-size: 14pt;
+    color: #bfbfbf;
+    font-family: Helvetica;
+}
+
+.sendform-left {    
+    width: 80%;
+    display: inline-grid;
+    clear: right;
+}
+
+.sendform-right {    
+    display: inline-grid;
+    width: 20%;
+    height: 100px;
+}
+
+.sendform-right-top {
+    display: block;
+    margin: auto;
+}
+
+.sendform-right-bottom {
+    display: block;
+    margin: auto;
+}
+
+.sendform-textarea {
+    background-color: #1d1d1d;
+    border-style: solid;
+    border-color: #93ca2d;
+    border-radius: 6px;
+    border-width: 1px;
+    padding: 6px;
+    width: 100%;
+    resize: unset;
+    min-height: 100px;
+    max-height: 600px;
+    margin: 6px;
+    font-size: 14pt;
+    color: #bfbfbf;
+    font-family: Helvetica;
+}
+
+.sendform-btn {
+    background-color: #1d1d1d;
+    border-style: solid;
+    border-color: #93ca2d;
+    border-radius: 6px;
+    border-width: 1px;    
+    font-size: 12pt;
+    color: #93ca2d;
+    font-family: Helvetica;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    .sendform-btn:hover {
+        background-color: #93ca2d;
+        color: #1d1d1d;
+    }
+
+    .sendform-btn:disabled {
+        background-color: #1d1d1d;
+        color: #4d4d4d;
+        border-color: #4d4d4d;
+    }
+
+input[type="radio"] {
+    display: none;
+}
+
+    input[type="radio"] + label {
+        color: #f2f2f2;
+        font-family: Arial, sans-serif;
+    }
+
+        input[type="radio"] + label span {
+            display: inline-block;
+            border-radius: 10px;
+            width: 19px;
+            height: 19px;
+            margin: 5px;
+            vertical-align: middle;
+            background-color: aquamarine;
+            cursor: pointer;
+        }
+
+    input[type="radio"]#sendform-msgcolor-0 + label span {
+        background-color: #1f1f1f;
+    }
+
+    input[type="radio"]#sendform-msgcolor-1 + label span {
+        background-color: #686868;
+    }
+
+    input[type="radio"]#sendform-msgcolor-2 + label span {
+        background-color: #923232;
+    }
+
+    input[type="radio"]#sendform-msgcolor-3 + label span {
+        background-color: #329223;
+    }
+
+    input[type="radio"]:checked + label span {
+        border-color: #93ca2d;
+        border-width: 3px;
+        border-style: solid;
+    }

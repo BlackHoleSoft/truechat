@@ -1,0 +1,14 @@
+@if (User.Identity.IsAuthenticated)
+{
+    ViewData["Title"] = User.Identity.Name;    
+}
+else
+{
+    ViewData["Title"] = "LoggedOut";    
+}
+
+<div id="react-app">Loading...</div>
+
+@section scripts {
+    <script src="~/dist/main.js" asp-append-version="true"></script>
+}
